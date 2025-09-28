@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Undangan Aqiqah</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Cinzel:wght@400..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- SimplyCountdown CSS -->
+    <link rel="stylesheet" href="Countdown/simplyCountdown.theme.default.css" />
+
+    <!-- AOs -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <section
+      id="hero"
+      class="hero p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white"
+    >
+      <main>
+        <canvas id="particleCanvas"></canvas>
+        <h3>Tasyukuran <br />Aqiqah</h3>
+        <h1 class="">Kalila Falisha</h1>
+        <p class="text1 fw-bold">Putri Ahmad Hidayat & Minarsih</p>
+
+        <p class="text2">Kepada Yth. <br /><span></span></p>
+        <h4 class="fw-bold"><span>Nama Tamu</span></h4>
+        <a
+          href="#home"
+          id="viewInvitation"
+          class="button"
+          onclick="enableScroll()"
+          ><i class="bi bi-book-fill"></i> Lihat Undangan</a
+        >
+      </main>
+    </section>
+
+    <section id="home" class="home">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center">
+            <h2>Tasyakuran Aqiqah</h2>
+            <img
+              src="img/kalila3.jpeg"
+              class="img-fluid rounded-circle"
+              width="200px"
+              alt=""
+            />
+            <h1 class="mt-2">Kalila Falisha</h1>
+            <p class="text-sm">Putri dari Ahmad Hidayat & Minarsih</p>
+            <div class="simply-countdown"></div>
+            <p class="text-sm">Sabtu, 21 September 2024</p>
+          </div>
+        </div>
+      </div>
+      <svg viewBox="0 0 1320 300">
+        <path fill="#f14e95" fill-opacity="0.5" />
+        <path fill="#f5f5f5" fill-opacity="0.5" />
+        <path fill="#f14e95" fill-opacity="0.5" />
+        <path fill="#a7007d" fill-opacity="0.5" />
+      </svg>
+    </section>
+
+    <section id="doa" class="doa">
+      <div class="container garis">
+        <div class="row justify-content-center">
+          <div
+            class="surat col-md-6 text-center"
+            data-aos="fade"
+            data-aos-duration="2000"
+          >
+            <h3 class="mb-2">
+              ثُمَّ اَوْحَيْنَآ اِلَيْكَ اَنِ اتَّبِعْ مِلَّةَ اِبْرٰهِيْمَ
+              حَنِيْفًا ۗوَمَا كَانَ مِنَ الْمُشْرِكِيْنَ
+            </h3>
+            <p class="text-sm pt-3">
+              "Kemudian, Kami wahyukan kepadamu (Nabi Muhammad), “Ikutilah agama
+              Ibrahim sebagai (sosok) yang hanif dan tidak termasuk orang-orang
+              musyrik.”
+            </p>
+            <p class="text-sm">Q.S. An-Nahl 16: 123</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="undangan" id="undangan">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center">
+            <h3 data-aos="fade-down" data-aos-duration="2000">
+              Assalamu’alaikum Wr. Wb.
+            </h3>
+            <p class="text-sm" data-aos="zoom-in" data-aos-duration="2000">
+              Dengan memohon rahmat dan ridho Allah Subhanahu Wa Ta’ala,
+              insyaaAllah kami akan menyelenggarakan acara Tasyakuran Aqiqah
+              anak kami:
+            </p>
+            <img
+              src="img/Kalila.png"
+              class="img-fluid mt-4 mb-4 rounded-circle"
+              width="150"
+              alt="Foto Kalila"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              data-aos-delay="400"
+            />
+            <h1
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+              data-aos-delay="100"
+              data-aos-offset="10"
+            >
+              Kalila Falisha
+            </h1>
+            <p
+              class="text-sm"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              data-aos-delay="50"
+              data-aos-offset="10"
+            >
+              (Lahir pada Rabu, 10 Juli 2024)
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="acara" class="acara">
+      <div class="container">
+        <!-- Row for Heading and Button -->
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <img
+              src="https://www.linkacara.com/Templates/WEDDING-PREMIUM041/assets/images/savethedate.png"
+              alt=""
+              width="200"
+            />
+            <h3 data-aos="fade-down" data-aos-duration="2000">
+              Waktu Dan Tempat
+            </h3>
+            <p
+              class="text-sm"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+              data-aos-delay="100"
+            >
+              Ingatkan saya melalui google calendar
+            </p>
+            <a
+              href="https://calendar.app.google/A4V3XnQinFCAxpkG6"
+              target="_blank"
+              class="btn btn-light btn-md"
+              data-aos="zoom-out"
+              data-aos-duration="2000"
+              data-aos-delay="100"
+            >
+              <i class="bi bi-bell-fill"></i> Atur Pengingat
+            </a>
+          </div>
+        </div>
+
+        <!-- Row for Event Card and Map -->
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-10">
+            <!-- Event Waktu -->
+            <div
+              class="event-card waktu"
+              data-aos="fade-right"
+              data
+              data-aos-duration="2000"
+              data-aos-delay="100"
+            >
+              <div class="side-label">WAKTU</div>
+              <div class="content">
+                <p>Hari & Tanggal: Sabtu, 21 September 2024</p>
+                <p>Jam: 10.00 WITA - Selesai</p>
+                <hr />
+              </div>
+            </div>
+
+            <!-- Event Tempat -->
+            <div
+              class="event-card tempat"
+              data-aos="fade-left"
+              data-aos-duration="2000"
+              data-aos-delay="2002"
+            >
+              <div class="content">
+                <p>
+                  Rumah Keluarga Bapak Ahmad Hidayat, Perumahan Bukit Permata
+                  Blok Cendana Belakang Kampus 2 Amik Nurmal
+                </p>
+                <hr />
+                <div class="map">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d188.61778937957604!2d122.7834227326149!3d-0.9943085397018993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1samik%20nurmal!5e1!3m2!1sid!2sid!4v1725799599375!5m2!1sid!2sid"
+                    width="100%"
+                    height="200"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                  <!-- Directions Button -->
+                  <a
+                    href="https://maps.app.goo.gl/xeKeEMEhF91pJyWs5"
+                    target="_blank"
+                    class="btn btn-light btn-md"
+                    data-aos="zoom-out"
+                    data-aos-duration="2000"
+                    data-aos-delay="100"
+                  >
+                    <i class="bi bi-geo-alt-fill"></i> Petunjuk Arah
+                  </a>
+                </div>
+              </div>
+              <div class="side-label">TEMPAT</div>
+            </div>
+            <div class="col-md-6 text-center">
+              <p
+                class="text-sm"
+                data-aos="zoom-in"
+                data-aos-duration="2000"
+                data-aos-delay="100"
+              >
+                Menjadi sebuah kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i
+                berkenan hadir dalam hari bahagia ini. Terima kasih atas segala
+                ucapan, doa, dan perhatian yang diberikan.
+              </p>
+            </div>
+            <!-- Google Maps Embed -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section id="galeri" class="galeri">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h3 data-aos="fade-down" data-aos-duration="2000">Galeri</h3>
+            <p
+              class="text-sm"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+              data-aos-delay="100"
+            >
+              Berikut adalah momen-momen berharga dari buah hati kami, yang
+              menunjukkan kebahagiaan dan keistimewaannya.
+            </p>
+          </div>
+
+          <div
+            class="row row-cols-lg-3 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-aos-delay="100"
+          >
+            <div class="col mt-3">
+              <a
+                href="https://cdn2.invi.id/q:intelligent/r:0/wp:1/w:1/u:https://demo.invi.id/wp-content/uploads/2023/04/Dummy-Image-5.jpg"
+                data-toggle="lightbox"
+                data-gallery="gallery"
+                data-caption="Momen pertama yang spesial"
+              >
+                <img
+                  src="https://cdn2.invi.id/q:intelligent/r:0/wp:1/w:1/u:https://demo.invi.id/wp-content/uploads/2023/04/Dummy-Image-5.jpg"
+                  alt="Momen pertama yang spesial"
+                  class="img-fluid w-100 rounded"
+                />
+              </a>
+            </div>
+            <div class="col mt-3">
+              <a
+                href="https://cdn2.invi.id/q:intelligent/r:0/wp:1/w:1/u:https://demo.invi.id/wp-content/uploads/2023/04/Dummy-Image-5.jpg"
+                data-toggle="lightbox"
+                data-gallery="gallery"
+                data-caption="Keceriaan bersama keluarga"
+              >
+                <img
+                  src="https://cdn2.invi.id/q:intelligent/r:0/wp:1/w:1/u:https://demo.invi.id/wp-content/uploads/2023/04/Dummy-Image-5.jpg"
+                  alt="Keceriaan bersama keluarga"
+                  class="img-fluid w-100 rounded"
+                />
+              </a>
+            </div>
+            <div class="col mt-3">
+              <a
+                href="https://cdn2.invi.id/q:intelligent/r:0/wp:1/w:1/u:https://demo.invi.id/wp-content/uploads/2023/04/Dummy-Image-5.jpg"
+                data-toggle="lightbox"
+                data-gallery="gallery"
+                data-caption="Senyuman bahagia"
+              >
+                <img
+                  src="https://cdn2.invi.id/q:intelligent/r:0/wp:1/w:1/u:https://demo.invi.id/wp-content/uploads/2023/04/Dummy-Image-5.jpg"
+                  alt="Senyuman bahagia"
+                  class="img-fluid w-100 rounded"
+                />
+              </a>
+            </div>
+            <div class="col mt-3">
+              <a
+                href="https://cdn2.invi.id/q:intelligent/r:0/wp:1/w:1/u:https://demo.invi.id/wp-content/uploads/2023/04/Dummy-Image-5.jpg"
+                data-toggle="lightbox"
+                data-gallery="gallery"
+                data-caption="Momen berharga bersama sahabat"
+              >
+                <img
+                  src="https://cdn2.invi.id/q:intelligent/r:0/wp:1/w:1/u:https://demo.invi.id/wp-content/uploads/2023/04/Dummy-Image-5.jpg"
+                  alt="Momen berharga bersama sahabat"
+                  class="img-fluid w-100 rounded"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section id="last" class="last">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center justify-content-center">
+            <div class="gifts">
+              <form
+                class="row g-3 justify-content-center text-start"
+                method="POST"
+                action="https://script.google.com/macros/s/AKfycbxl3EBZEzM39hAaI1inJMFCMku5x102WxSZQGWVN61Lr2hWBHHfkIzRBLCGGpCIAI13rw/exec"
+                id="my-form"
+              >
+                <div
+                  class="col-12"
+                  data-aos="fade-right"
+                  data-aos-duration="2000"
+                  data-aos-delay="100"
+                >
+                  <h3 class="buku-tamu text-center">Buku Tamu</h3>
+                  <div>
+                    <label for="nama" class="form-label text-sm">Nama</label>
+                    <input
+                      placeholder="Nama Lengkap"
+                      type="text"
+                      class="form-control"
+                      id="nama"
+                      name="nama"
+                      required
+                    />
+                  </div>
+                </div>
+                <div
+                  class="col-12"
+                  data-aos="fade-left"
+                  data-aos-duration="2000"
+                  data-aos-delay="200"
+                >
+                  <div>
+                    <label for="ucapan" class="form-label text-sm"
+                      >Ucapan/Doa</label
+                    >
+                    <input
+                      placeholder=""
+                      type="text"
+                      class="form-control"
+                      id="ucapan"
+                      name="ucapan"
+                      required
+                    />
+                  </div>
+                </div>
+                <div
+                  class="col-12"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                  data-aos-delay="300"
+                >
+                  <div class="mb-3">
+                    <label for="status" class="form-label text-sm"
+                      >Konfirmasi</label
+                    >
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="status"
+                        id="status1"
+                        value="1 orang"
+                        required
+                      />
+                      <label class="form-check-label text-sm" for="status1"
+                        >1 orang</label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="status"
+                        id="status2"
+                        value="2 orang"
+                      />
+                      <label class="form-check-label text-sm" for="status2"
+                        >2 orang</label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="status"
+                        id="status3"
+                        value="Maaf, Saya Belum Hadir"
+                      />
+                      <label class="form-check-label text-sm" for="status3"
+                        >Maaf, Saya Belum Hadir</label
+                      >
+                    </div>
+                    <button
+                      type="submit"
+                      class="btn btn-light btn-md my-3 text-sm"
+                    >
+                      <i class="bi bi-send"></i> Kirim Ucapan
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="audio-container">
+      <audio id="song" autoplay loop>
+        <source
+          src="sound/yt5s.com - Maula Ya Salli Wa Sallim - AYAT ALAM _ Cute Baby Voice Beautiful Naat _ New Naat (128 kbps).mp3"
+          type="audio/mp3"
+        />
+      </audio>
+
+      <div class="audio-icon-wrapper" style="display: none">
+        <i class="bi bi-disc"></i>
+      </div>
+    </div>
+
+    <!-- Bootstrap and Popper.js JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- SimplyCountdown JS -->
+    <script src="Countdown/simplyCountdown.js"></script>
+    <script>
+      simplyCountdown(".simply-countdown", {
+        year: 2024, // Tahun target hitung mundur
+        month: 9, // Bulan target hitung mundur (September)
+        day: 21, // Hari target hitung mundur
+        hours: 10, // Jam target hitung mundur (08:00)
+        minutes: 0, // Menit target hitung mundur
+        seconds: 0, // Detik target hitung mundur
+        words: {
+          days: { singular: "hari", plural: "hari" },
+          hours: { singular: "jam", plural: "jam" },
+          minutes: { singular: "menit", plural: "menit" },
+          seconds: { singular: "detik", plural: "detik" }, // Kata untuk detik
+        },
+      });
+    </script>
+
+    <!-- jQuery -->
+
+    <script src="script.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+  </body>
+</html>

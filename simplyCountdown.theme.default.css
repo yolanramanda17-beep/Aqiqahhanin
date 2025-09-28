@@ -1,0 +1,47 @@
+.simply-countdown {
+  overflow: hidden;
+  display: table;
+  font-family: "Arial", sans-serif;
+  margin: auto;
+}
+
+.simply-countdown > .simply-section {
+  width: 60px; /* Sesuaikan ukuran sesuai kebutuhan */
+  height: 60px; /* Sesuaikan ukuran sesuai kebutuhan */
+  padding: 10px; /* Sesuaikan padding sesuai kebutuhan */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  margin: 10px;
+  background: #f8bbd0; /* Pink background */
+  border: 3px solid #f6a6b0; /* Pink border slightly darker than background */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+    /* Outer shadow for 3D effect */ inset 0 -3px 5px rgba(0, 0, 0, 0.1); /* Inner shadow for depth effect */
+}
+
+.simply-countdown > .simply-section .simply-amount,
+.simply-countdown > .simply-section .simply-word {
+  display: block;
+  text-align: center;
+}
+
+.simply-countdown > .simply-section .simply-amount {
+  font-size: 1.5rem; /* Sesuaikan ukuran font sesuai kebutuhan */
+  font-weight: bold; /* Menambah ketebalan font untuk menonjolkan angka */
+  color: #333; /* Warna teks yang kontras dengan latar belakang */
+}
+
+.simply-countdown > .simply-section .simply-word {
+  font-size: 0.75rem; /* Ukuran font untuk label */
+  color: #666; /* Warna teks untuk label, sesuaikan dengan desain */
+}
+
+@media (max-width: 332px) {
+  .simply-countdown > .simply-section {
+    width: 50px; /* Sesuaikan ukuran sesuai kebutuhan */
+    height: 50px; /* Sesuaikan ukuran sesuai kebutuhan */
+    padding: 10px; /* Sesuaikan padding sesuai kebutuhan */
+  }
+}
